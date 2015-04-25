@@ -1,0 +1,105 @@
+/*----- GENERAL --------------------------*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  color: #373737;
+  font-weight: 300;
+  background-color: #FFF; }
+
+.section {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.container {
+  position: relative;
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: 640px;
+  overflow: hidden; }
+
+@media (min-width: 30em) {
+  .row {
+    width: 100%;
+    display: table;
+    table-layout: fixed; }
+
+  .col {
+    display: table-cell; } }
+/*----- TYPOGRAPHY --------------------------*/
+h1, h2, h3, h4, p, a {
+  margin: 0;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none; }
+
+h1 {
+  font-size: 50px;
+  font-weight: 300; }
+
+h2 {
+  font-size: 28px;
+  font-weight: 300; }
+
+a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #52bad5; }
+  a:hover {
+    color: #6dc5dc;
+    text-decoration: underline; }
+
+/*----- MAIN --------------------------*/
+#main {
+  margin-top: 50px; }
+
+.image-wrapper {
+  width: 100%; }
+
+.image-wrapper img {
+  max-width: 200px;
+  border-radius: 100%; }
+
+.headline a {
+  color: #373737;
+  font-weight: 300; }
+
+.headline, .sub-headline, .bio {
+  margin: 30px 0; }
+
+.sub-headline {
+  color: #b7b7b7; }
+
+/*----- FOOTER --------------------------*/
+#footer {
+  margin: 50px 0; }
+
+.footer-spacer {
+  width: 20px;
+  vertical-align: baseline; }
+
+@media screen and (max-width: 525px) {
+  body, p {
+    font-size: 24px;
+    line-height: 36px; }
+
+  .row {
+    display: block; }
+
+  .col {
+    display: block; }
+
+  #footer {
+    margin: 10px 0 50px 0; }
+
+  .footer-spacer {
+    height: 20px;
+    vertical-align: baseline; } }
